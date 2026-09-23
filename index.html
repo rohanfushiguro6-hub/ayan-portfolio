@@ -1,39 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ayan - Freelance Web Developer</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
             background: #111827;
             color: white;
             text-align: center;
-            padding-top: 60px;
-            font-family: Arial, sans-serif;
+            padding: 70px 20px;
         }
 
-        .card {
-            background: #1f2937;
-            width: 300px;
-            margin: auto;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        }
-
-        .card img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        h1 {
+        header h1 {
+            font-size: 40px;
             margin-bottom: 10px;
         }
 
-        p {
-            font-size: 16px;
+        header p {
+            font-size: 20px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .about,
+        .skills,
+        .services,
+        .projects {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            margin: 15px auto;
+            max-width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .skills-container,
+        .services-container,
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .project-card {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
         }
 
         button {
@@ -42,55 +90,219 @@
             border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 10px;
         }
+
+        .contact {
+            background: #111827;
+            color: white;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+
+        }
+
     </style>
+
 </head>
 
 <body>
 
-    <div class="card">
+    <header>
 
-        <img src="profile.jpg" alt="My Profile">
-
-        <h1>Ayan</h1>
+        <h1>Hi, I'm Ayan 👋</h1>
 
         <p>Freelance Web Developer</p>
 
-        <p>🌐 HTML</p>
-        <p>🎨 CSS</p>
-        <p>⚡ JavaScript</p>
+        <p>
+            I create simple and responsive websites.
+        </p>
+
+    </header>
+
+
+    <section class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I'm Ayan.
+            I am learning web development and
+            building modern websites using HTML,
+            CSS and JavaScript.
+        </p>
+
+    </section>
+
+
+    <section class="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="box">
+                <h3>HTML</h3>
+                <p>Website structure</p>
+            </div>
+
+            <div class="box">
+                <h3>CSS</h3>
+                <p>Website design and styling</p>
+            </div>
+
+            <div class="box">
+                <h3>JavaScript</h3>
+                <p>Website interaction</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="services">
+
+        <h2>My Services</h2>
+
+        <div class="services-container">
+
+            <div class="box">
+                <h3>🌐 Website Design</h3>
+                <p>
+                    Simple and responsive websites
+                    for businesses.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>🎨 Web Styling</h3>
+                <p>
+                    Clean and attractive website designs.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>⚡ JavaScript</h3>
+                <p>
+                    Basic interactive features.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <h3>💼 Business Website</h3>
+
+                <p>
+                    A simple responsive business website
+                    created using HTML, CSS and JavaScript.
+                </p>
+
+                <a
+                    href="https://rohanfushiguro6-hub.github.io/business-website/"
+                    target="_blank"
+                >
+
+                    <button>
+                        View Project 🚀
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in working with me?
+        </p>
+
+        <button onclick="contact()">
+            Contact Me 📩
+        </button>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Ayan | Freelance Web Developer
+        </p>
+
+    </footer>
+                 <section class="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>
+        Interested in working with me?
+    </p>
+
+    <p>
+        📧 Email:rohanislam1267@gmail.com
         
-        <hr>
-<h2>My Services</h2>
+    </p>
 
-<p>🌐 Simple Website Design</p>
-<p>🎨 Website Styling</p>
-<p>⚡ Basic JavaScript</p>
-<p>📱 Mobile Friendly Website</p>
-<hr>
+    <p>
+        💬 Available for website projects
+    </p>
 
-<h2>About Me</h2>
+    <button onclick="contact()">
+        Contact Me 📩
+    </button>
 
-<p>
-    Hi! I am Ayan.
-    I am learning web development and freelancing.
-    I can create simple and mobile-friendly websites.
-</p>
-        <button onclick="contactMe()">Contact Me</button>
-<hr>
-
-<h2>Contact Me</h2>
-
-<p>📧 Email: rohanislam1267@email.com</p>
-<p>💬 Available for website projects</p>
-    </div>
+</section>
 
     <script>
-        function contactMe() {
-            alert("You can contact me for website work!");
+
+        function contact() {
+
+            alert(
+                "Thanks for your interest! 📩"
+            );
+
         }
+
     </script>
 
 </body>
+
 </html>
