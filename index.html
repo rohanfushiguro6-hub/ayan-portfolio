@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ayan - Freelance Web Developer</title>
+
+    <style>
+        body {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            background: #1f2937;
+            width: 300px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img src="profile.jpg" alt="My Profile">
+
+        <h1>Ayan</h1>
+
+        <p>Freelance Web Developer</p>
+
+        <p>🌐 HTML</p>
+        <p>🎨 CSS</p>
+        <p>⚡ JavaScript</p>
+
+        <button onclick="contactMe()">Contact Me</button>
+
+    </div>
+
+    <script>
+        function contactMe() {
+            alert("You can contact me for website work!");
+        }
+    </script>
+
+</body>
+</html>
